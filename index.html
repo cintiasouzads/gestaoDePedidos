@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Pedidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestão de Pedidos</h1>
+  </header>
+
+  <section>
+    <h2>Cadastrar Pedido</h2>
+    <form id="pedidoForm">
+      <input type="text" id="nomeCliente" placeholder="Nome do Cliente" required>
+      <input type="text" id="itemPedido" placeholder="Item" required>
+      <input type="number" id="quantidade" placeholder="Quantidade" min="1" required>
+      <button type="submit">Adicionar Pedido</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Lista de Pedidos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Item</th>
+          <th>Quantidade</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaPedidos">
+        <!-- Linhas adicionadas dinamicamente -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
